@@ -82,6 +82,7 @@ NAME Beach
 EXT 0,12 0 15,12
 EXT 15,12 5 0,2
 PAL 1
+TUNE 3
 
 ROOM 2
 c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c
@@ -104,6 +105,7 @@ NAME Surfer Dude Room
 ITM 2 12,3
 EXT 15,10 0 0,10
 PAL 0
+TUNE 2
 
 ROOM 3
 g,g,g,g,e,e,e,g,f,f,c,c,f,c,c,f
@@ -126,6 +128,7 @@ NAME Battle
 EXT 12,0 6 6,15
 EXT 0,12 4 15,2
 PAL 1
+TUNE 3
 
 ROOM 4
 g,g,e,e,e,e,e,e,g,g,g,g,g,g,g,g
@@ -148,6 +151,7 @@ NAME Maze
 EXT 0,13 5 15,8
 EXT 15,2 3 0,12
 PAL 1
+TUNE 3
 
 ROOM 5
 g,g,g,g,e,e,g,g,g,g,g,g,g,g,e,g
@@ -170,6 +174,7 @@ NAME Rocky Shore
 EXT 15,8 4 0,13
 EXT 0,2 1 15,12
 PAL 1
+TUNE 3
 
 ROOM 6
 e,e,g,g,g,g,g,e,e,e,g,g,g,g,e,e
@@ -192,6 +197,7 @@ NAME Treasure Room
 EXT 6,15 3 12,0
 END a 15,5
 PAL 1
+TUNE 3
 
 TIL c
 00000000
@@ -522,7 +528,7 @@ DLG 4
 DLG 0
 """
 Ahoy, matey! Thar be treasure around these parts! I've heard it's somewhere to the east. Keep your eyes peeled, and remember - X marks the spot!
-Dont' forget to bring yer shovel! 
+Don't forget to bring yer shovel! 
 """
 NAME Crab dialog
 
@@ -575,7 +581,7 @@ DLG a
 """
 {
   - {item "0"} == 2 ?
-    Congratulations! You got the treasure! Whenever you've got a hankering for adventure, remember - X marks the spot!
+    {tune "1"}Congratulations! You got the treasure! Whenever you've got a hankering for adventure, remember - X marks the spot!
   - else ?
     It seems you weren't able to get the treasure. {pg}You go home empty-handed...
 }
